@@ -1,0 +1,42 @@
+version: '2'
+
+services:
+  postgres:
+    image: postgres:11.21-bookworm
+    container_name: ${POSTGRES_CONTAINER}
+    environment:
+      POSTGRES_USER: "${POSTGRES_USER}"
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD}"
+    volumes:
+      - ./init/postgres:/docker-entrypoint-initdb.d
+      - ./pg_data:/var/lib/mysql
+    networks:
+      guarani-network:
+        aliases: 
+          - postgres
+
+  php-apache-server:
+    container_name: ${APACHE_CONTAINER}
+    build:
+      context: .
+      dockerfile: Dockerfile-php-apache
+    volumes:
+      - ./guarani:/usr/local/proyectos/guarani
+      - ./apacheconf/toba_3_3.conf:/etc/apache2/sites-enabled/toba_3_3.conf
+    ports:
+      - 900:80
+    links:
+      - postgres:postgres
+    networks:
+      guarani-network:
+        aliases:
+          - php-apache
+
+networks:
+  guarani-network:
+    name: guarani-net
+    driver: bridge
+    ipam:
+      driver: default
+    driver_opts:
+      com.docker.compose.network: "guarani-net"
