@@ -36,8 +36,7 @@ RUN apt-get update && \
 
 # Composer
 RUN curl -sS https://getcomposer.org/installer | php \
-    && mv composer.phar /usr/bin/apt-get update && \
-    apt upgrade --yes
+    && mv composer.phar /usr/bin/composer
 
 RUN apt-get update && \composer
 
