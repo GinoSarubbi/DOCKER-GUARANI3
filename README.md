@@ -2,7 +2,7 @@
 
 Automatización de la instalación del SIU Guarani en un contenedor Docker.
 
-## Instalación de Guarani3
+## Instalación de Guarani3 - DOCKER
 
 Asegúrate de tener Docker instalado en tu sistema antes de comenzar.
 
@@ -31,3 +31,6 @@ Asegúrate de tener Docker instalado en tu sistema antes de comenzar.
     ```bash
      docker-compose up -d && ./init_script.sh     
     ```
+
+# Contribuciones
+¡Las contribuciones son bienvenidas! Si deseas colaborar, puedes enviar pull requests con tus mejoras.
