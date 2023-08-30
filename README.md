@@ -34,3 +34,8 @@ Asegúrate de tener Docker instalado en tu sistema antes de comenzar.
 
 # Contribuciones
 ¡Las contribuciones son bienvenidas! Si deseas colaborar, puedes enviar pull requests con tus mejoras.
+
+## Colaboradores
+[ivan aguirre] https://github.com/aguirre-ivan
+[Nazareno Fiorentino] https://github.com/nazafiorentino
+[Facundo Lepere] https://github.com/facundolepere
