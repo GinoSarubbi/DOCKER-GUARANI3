@@ -9,7 +9,7 @@ Asegúrate de tener Docker instalado en tu sistema antes de comenzar.
 1. Clona este repositorio en tu máquina local:
 
    ```bash
-   git clone https://github.com/tu-usuario/GUARANI3-DOCKER.git
+   https://github.com/GinoSarubbi/DOCKER-GUARANI3.git
    ```
 
 2. Navega al directorio del repositorio:
