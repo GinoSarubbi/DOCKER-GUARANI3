@@ -14,7 +14,7 @@ Asegúrate de tener Docker instalado en tu sistema antes de comenzar.
 
 2. Navega al directorio del repositorio:
   ```bash
-   cd GUARANI3-DOCKER
+      cd GUARANI3-DOCKER
    ```
 
 3. Define las siglas de tu institución y la versión de Guarani que deseas instalar:
