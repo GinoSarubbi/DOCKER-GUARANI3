@@ -13,7 +13,7 @@ Asegúrate de tener Docker instalado en tu sistema antes de comenzar.
    ```
 
 2. Navega al directorio del repositorio:
-  ```bash
+   ```bash
       cd GUARANI3-DOCKER
    ```
 
